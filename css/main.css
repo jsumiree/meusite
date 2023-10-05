@@ -9,7 +9,7 @@ body{
     height: 100%;  /*altura*/
     display: flex;
     justify-content: center;
-    background-color: rgb(101, 15, 182);
+    background-color: rgb(15, 182, 107);
 
 }
 .imagem{/* configuraciones en la div imagem*/
@@ -29,4 +29,10 @@ body{
     font-weight: 600; /*negrito,destacar intensidad da fonte*/
     color: rgb(255, 0, 85);
     font-family: 'Times New Roman', Times, serif;
+    font-family: cursive;
 }
+/*.icone{ configuraciones en la div icono
+    display: flex;
+    justify-content: center;
+    color: brown;
+}*/
