@@ -9,7 +9,8 @@ body{
     height: 100%;  /*altura*/
     display: flex;
     justify-content: center;
-    background-color: rgb(15, 182, 107);
+    background: linear-gradient(rgb(194, 80, 80),rgb(212, 212, 74));/*combina 2 colores, si solo se quiere un color backgroun-coloer*/
+    background-repeat: no-repeat;/*es para que no repita la combinacion de colores al final de la pagina web*/
 
 }
 .imagem{/* configuraciones en la div imagem*/
@@ -21,7 +22,7 @@ body{
     border-radius: 100px;
     margin-top: 30px; /*margen superior*/
 }
-.nome{
+.nome{/*solo puedo usa una vez, en cambio .imagem img varias veces*/
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -31,8 +32,41 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-family: cursive;
 }
-/*.icone{ configuraciones en la div icono
+.redes-sociais{
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+.icone, .email{ /*es para ajustar la caja icone y email con la misma configuracion*/
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+    transition: all 0.3 ease-out;/*al señalar el icono mostrara el nombre de la pagina*/
+    box-shadow: 0 5px 5px rgba(75, 191, 73, 1);/*valores pequeños, misma regla arriba, derecha,abajo,izquierda*/
+    /*box-shadow*/
+    margin: 5px;
+    overflow: hidden;/*crea efecto de mascara, en este caso oculta mascara*/
+}
+.icone i, .email i{/*ahora modificamos los i, osea directamente los iconos de las redes sociales*/
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: aqua;
+    color: blueviolet;
+    cursor: pointer;/*cambia el cursor del mouse*/
+
+}
+.imagem2{/* configuraciones en la div imagem*/
     display: flex;
     justify-content: center;
-    color: brown;
-}*/
+}
+.imagem2 img{ /*se modifica directamente en la imagen*/
+    width: 250px; /*tamaño de la imagen*/
+    border-radius: 50px;
+    margin-top: 20px; /*margen superior*/
+}
