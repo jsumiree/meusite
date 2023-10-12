@@ -1,6 +1,6 @@
 /*  comentario  */
 * {
-    margin: 0 0 0 0;/*arriba, derecha, abajo izquierda*/
+    margin: 0;/*arriba, derecha, abajo izquierda*/
     padding: 0;
 }
 
@@ -33,20 +33,25 @@ body{
     font-family: cursive;
 }
 .redes-sociais{
+    display: flex;/*de lista paso a ordenar(centralizar) en fila, los iconos*/
     margin-top: 10px;
     justify-content: center;
     align-items: center;
-
+}
+.redes-sociais a{
+    text-decoration: none;
 }
 .icone, .email{ /*es para ajustar la caja icone y email con la misma configuracion*/
     height: 35px;
     width: 35px;
     border-radius: 30px;
-    transition: all 0.3 ease-out;/*al señalar el icono mostrara el nombre de la pagina*/
-    box-shadow: 0 5px 5px rgba(75, 191, 73, 1);/*valores pequeños, misma regla arriba, derecha,abajo,izquierda*/
+    transition: all 0.3s ease-out;/*al señalar el icono mostrara el nombre de la pagina*/
+    box-shadow: 0 5px 5px rgb(140, 211, 138);/*valores pequeños, misma regla arriba, derecha,abajo,izquierda*/
     /*box-shadow*/
     margin: 5px;
     overflow: hidden;/*crea efecto de mascara, en este caso oculta mascara*/
+    /*font-family: 'Times New Roman', Times, serif;
+    color: blue;*/
 }
 .icone i, .email i{/*ahora modificamos los i, osea directamente los iconos de las redes sociales*/
     display: inline-block;
@@ -59,6 +64,42 @@ body{
     background-color: aqua;
     color: blueviolet;
     cursor: pointer;/*cambia el cursor del mouse*/
+
+}
+.icone span a{
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    float: right;/*para escoger el lado del texto que va a salir*/
+    font-size: 13px;
+    margin-right: 20px;
+    color: blue;
+    line-height: 35px;
+}
+.icone:hover{/*los textos aparecen al pasar el mouse*/
+    width: 125px;
+    background-color: rgb(117, 220, 141);
+
+}
+.texto{/*solo ue coloca punto cuando es class*/
+    display: flex;
+    width: 300px; /*largura*/
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;/*al colocar margend erecha se mueve la caja a derecha, manualmente, pero crea un borde, como si la pag fuese una hoja*/
+    height: 150px;/*altura de la caja*/
+    padding: 10px 20px;/*margin interno, espacio entre teto y caja, arriba, derecha, abajo izquierda, o podemos poner 1 valor para todos*/
+    border-radius: 30px;
+    color: brown;
+    background: rgb(73, 197, 225);
+    overflow: hidden;/*mascara, si se modifica el tamaño de la pantalla, no deja salir el texto de la caja, reajustandolo*/
+    /*overflow: scroll mete todo el texto dentro de la caja y aparece un cursor, para ver todo el texto*/
+    box-shadow: 7px 7px 20px red;/*direccion de la sombra derecha o izquierda,luz arriba o abajo, efecto de transparencia, color*/
+    cursor: ; /*sin cursor*/  
+}
+h2{
+    margin-top: 35px;
+    text-align: center;
+    color: blueviolet;
 
 }
 .imagem2{/* configuraciones en la div imagem*/
