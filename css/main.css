@@ -87,7 +87,7 @@ body{
     align-items: center;
     margin-top: 35px;/*al colocar margend erecha se mueve la caja a derecha, manualmente, pero crea un borde, como si la pag fuese una hoja*/
     height: 150px;/*altura de la caja*/
-    padding: 10px 20px;/*margin interno, espacio entre teto y caja, arriba, derecha, abajo izquierda, o podemos poner 1 valor para todos*/
+    padding: 5px 20px;/*margin interno, espacio entre teto y caja, arriba, derecha, abajo izquierda, o podemos poner 1 valor para todos*/
     border-radius: 30px;
     color: brown;
     background: rgb(73, 197, 225);
@@ -96,12 +96,23 @@ body{
     box-shadow: 7px 7px 20px red;/*direccion de la sombra derecha o izquierda,luz arriba o abajo, efecto de transparencia, color*/
     cursor: ; /*sin cursor*/  
 }
-h2{
+.titulo{
+    position: absolute;
+    top: 530px;
+    display: flex;
+    color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+
+}
+/*h2{
     margin-top: 35px;
     text-align: center;
     color: blueviolet;
 
-}
+}*/
 .imagem2{/* configuraciones en la div imagem*/
     display: flex;
     justify-content: center;
@@ -110,4 +121,30 @@ h2{
     width: 250px; /*tamaño de la imagen*/
     border-radius: 50px;
     margin-top: 20px; /*margen superior*/
+}
+
+.linguagem{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    font-size: 30px;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.projetos{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
+}
+.projetos img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    background: aqua;
+    color: blue;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 90px;
 }
