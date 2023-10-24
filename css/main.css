@@ -38,7 +38,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.redes-sociais a{
+.redes-sociais a{/*quitar el subrayado*/
     text-decoration: none;
 }
 .icone, .email{ /*es para ajustar la caja icone y email con la misma configuracion*/
@@ -96,7 +96,7 @@ body{
     align-items: center;
     margin-top: 35px;/*al colocar margend erecha se mueve la caja a derecha, manualmente, pero crea un borde, como si la pag fuese una hoja*/
     height: 150px;/*altura de la caja*/
-    padding: 5px 10px;/*margin interno, espacio entre teto y caja, arriba, derecha, abajo izquierda, o podemos poner 1 valor para todos*/
+    padding: 10px;/*margin interno, espacio entre teto y caja, arriba, derecha, abajo izquierda, o podemos poner 1 valor para todos*/
     border-radius: 30px;
     color: brown;
     background: rgb(73, 197, 225);
@@ -203,4 +203,93 @@ body{
 }
 #movie.active{
     display: block;/*ocultar el flex que estuvimos usando desde el inicio*/
+}
+.rodape p{
+    color: blue;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*recurso css que renderiza o conteudo do site e adapta para diverças resoluções(panallas)*/
+/*resolução  700px, la imagen disminuye su tamaño cuando la pantalla es pequeña*/
+@media (max-width: 700px) {
+    .imagem img{
+        width: 150px;
+        border-radius: 200px;
+        margin-top: 25px;
+    }
+    .imagem2 img{
+        width: 150px;
+        border-radius: 200px;
+        margin-top: 25px;
+    }
+    .texto {
+        width: 190px;
+        height: 170px;/*la altura tiene que ser mayor, porque al reducir, el texto tiene que bajar*/
+        margin-left: 30%;
+    }
+    .linguagem img{
+        width: 265px;
+
+    }
+    .subtitulo{
+        font-size: 20px;
+    }
+    .titulo{
+        margin-top: -150px;
+        font-size: 20px;
+    }
+    .item{
+        width: 350px;
+        height: 40px;
+        font-size: 20px;
+    }
+    /*los ids se llaman con #*/
+    #movie{
+        width: 325px;
+    }
+}
+@media (max-width: 500px) {
+    .imagem img{
+        width: 105px;
+        border-radius: 140px;
+        margin-top: 25px;
+    }
+    .imagem2 img{
+        width: 105px;
+        border-radius: 70px;
+        margin-top: 25px;
+    }
+    .texto {
+        width: 133px;
+        height: 210px;/*la altura tiene que ser mayor, porque al reducir, el texto tiene que bajar*/
+        margin-left: 29%;
+    }
+    .linguagem img{
+        width: 185px;
+
+    }
+    .subtitulo{
+        font-size: 20px;
+    }
+    .titulo{
+        margin-top: -200px;
+        font-size: 16px;
+    }
+    .item{
+        width: 245px;
+        height: 30px;
+        font-size: 18px;
+    }
+    /*los ids se llaman con #*/
+    #movie{
+        width: 228px;
+    }
+}
+/*para el caso de la orientacion horizontal*/
+@media (min-width: 700px) and (orientation: landscape){
+    
 }
