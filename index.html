@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu primeiro site</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script><!--para los iconos-->
 </head>
 <body>
     <main> <!--comentario-->
@@ -86,23 +86,28 @@
         <section class="projetos">
             <h2 class="subtitulo">Conheça os meus Projetos Front/Back</h2>
             <!--o id es unico (#) para una funcion, class (.) no-->
-            <div class="item" id="formulario">Conteudo 1</div>
-            <iframe width="600" height="300" class="movieform" id="movie"
+            <div class="item" id="albumFotos">Album de Fotos</div>
+            <iframe width="600" height="300" class="movieAlbum" id="movie"
             src="https://www.youtube.com/embed/1K1vZW4uDrM" title="Grand Prix de Inovação em 2023 durante a Semana SENAI de Inovação!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><!--se usa para linkear videos, se copia CODIGO DE INCORPORAÇAO-->
-            <div class="item" id="site">Conteudo 2</div>
-            <iframe width="600" height="300" class="moviesite" id="movie"
+            <div class="item" id="albumCasamento">Album de Casamento</div>
+            <iframe width="600" height="300" class="movieCasamento" id="movie"
             src="https://www.youtube.com/embed/1hbzT3T1Vcs" title="SENAI: o que é? | Indústria de A a Z - (Ep. #14)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="item" id="portfolio">Conteudo 3</div>
-            <iframe width="600" height="300" class="movieport" id="movie"
+            <div class="item" id="buffet">Buffet</div>
+            <iframe width="600" height="300" class="movieBuff" id="movie"
             src="https://www.youtube.com/embed/CPbD7jeT01c" title="Qual a diferença entre cursos do SENAI | Cursos Técnicos, Aprendizagem Industrial, Faculdade..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         
             
+        </section>
+        <section class="projetos">
+            <div class="item" id="fot1">Algumas fotos</div>
+            <iframe class="imagem3" width="1024" height="725" id="fotES" src="img/es.jpg" frameborder="0" allowfullscreen></iframe>
         </section>
 
         <footer class="rodape">
              <p>&copy; 2023 meu nome</p>   
         </footer>
-
+        <!--el js se ejecutara despues de cargar la pagina, por esto el js se escribe aaqui, si por ejemplo pedimos usuaro o senha, el js se pone en head-->
+        <script src="js/script.js"></script><!--desta forma vinculamos el script-->
 
 
 
